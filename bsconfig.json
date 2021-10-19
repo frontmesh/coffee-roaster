@@ -1,0 +1,24 @@
+{
+  "name": "roast-app",
+  "reason": {
+    "react-jsx": 3
+  },
+  "sources": {
+    "dir" : "src",
+    "subdirs" : true
+  },
+  "bsc-flags": ["-bs-super-errors", "-bs-no-version-header"],
+  "ppx-flags": ["@jsiebern/bs-material-ui-ppx/ppx"],
+  "package-specs": [{
+    "module": "es6",
+    "in-source": true
+  }],
+  "suffix": ".bs.js",
+  "namespace": true,
+  "bs-dependencies": [
+    "reason-react",
+    "@jsiebern/bs-material-ui",
+    "@mscharley/bs-material-ui-icons"
+  ],
+  "refmt": 3
+}
